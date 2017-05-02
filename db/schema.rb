@@ -19,11 +19,15 @@ ActiveRecord::Schema.define(version: 20170502191217) do
     t.string   "title"
     t.text     "description"
     t.text     "gratitude"
-    t.boolean  "pressups"
-    t.boolean  "situps"
+    t.boolean  "gym"
+    t.boolean  "run"
+    t.integer  "pressups"
+    t.integer  "situps"
+    t.integer  "backpain"
+    t.integer  "shoulderpain"
     t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.index ["user_id"], name: "index_records_on_user_id", using: :btree
   end
 

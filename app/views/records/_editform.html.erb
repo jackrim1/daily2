@@ -11,16 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <!-- <%= f.label :title %> -->
-    <%= f.input :title, placeholder: "the date e.g. 01/06/17" %><br>
-    <%= f.input :description, placeholder: "summarise the day" %><br>
-    <%= f.input :gratitude, placeholder: "what should you be grateful for today?" %><br>
-    <%= f.input :pressups %>
-    <%= f.input :situps %>
-  </div>
+  <div class="jumbotron">
+    <div class="field">
+      <!-- <%= f.label :title %> -->
+      <%= f.input :title, placeholder: "the date e.g. 01/06/17" %>
+      <%= f.input :description, placeholder: "summarise the day" %>
+      <%= f.input :gratitude, placeholder: "what should you be grateful for today?" %>
+      <%= f.input :pressups %>
+      <%= f.input :situps %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
   </div>
 <% end %>

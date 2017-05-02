@@ -4,7 +4,7 @@ class RecordsController < ApplicationController
   # GET /records
   # GET /records.json
   def index
-    @records = Record.all
+    @records = current_user.records
   end
 
   # GET /records/1
@@ -14,7 +14,7 @@ class RecordsController < ApplicationController
 
   # GET /records/new
   def new
-    @record = Record.new
+    @record = current_user.records.new
   end
 
   # GET /records/1/edit
@@ -24,7 +24,7 @@ class RecordsController < ApplicationController
   # POST /records
   # POST /records.json
   def create
-    @record = Record.new(record_params)
+    @record = current_user.records.create(record_params)
 
     respond_to do |format|
       if @record.save
@@ -69,6 +69,6 @@ class RecordsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def record_params
-      params.require(:record).permit(:title)
+      params.require(:record).permit(:title, :user, :description, :gratitude, :pressups, :situps)
     end
 end

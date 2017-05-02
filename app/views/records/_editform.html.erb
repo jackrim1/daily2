@@ -13,7 +13,15 @@
 
   <div class="field">
     <%= f.label :title %>
-    <%= f.text_field :title, placeholder: "the date e.g. 01/06/17" %>
+    <%= f.text_field :title, placeholder: "the date e.g. 01/06/17" %><br>
+    <%= f.label :description %>
+    <%= f.text_field :description, placeholder: "summarise the day" %><br>
+    <%= f.label :gratitude %>
+    <%= f.text_field :gratitude, placeholder: "what should you be grateful for today?" %><br>
+    <%= f.label :pressups %>
+    <%= f.check_box :pressups %>
+    <%= f.label :situps %>
+    <%= f.check_box :situps %>
   </div>
 
   <div class="actions">

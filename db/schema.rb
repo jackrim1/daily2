@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20170502191217) do
     t.string   "title"
     t.text     "description"
     t.text     "gratitude"
+    t.text     "blog"
     t.boolean  "gym"
     t.boolean  "run"
     t.integer  "pressups"

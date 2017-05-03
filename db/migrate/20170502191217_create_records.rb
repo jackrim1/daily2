@@ -4,6 +4,7 @@ class CreateRecords < ActiveRecord::Migration[5.0]
       t.string :title
       t.text :description
       t.text :gratitude
+      t.text :blog
       t.boolean :gym
       t.boolean :run
       t.integer :pressups

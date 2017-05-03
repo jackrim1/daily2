@@ -1,11 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Records</h1>
+<h1>Diary</h1>
 
+<%= link_to image_tag("add.png", :size => "100x100"), new_record_path %>
+
+<p>
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th>Previous</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Record', new_record_path %>
+

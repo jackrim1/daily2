@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/jackrim1/daily2.git"
 end
 
+gem 'groupdate'
+gem 'chartkick'
 gem 'simple_form'
 gem 'devise'
 gem 'bootstrap'

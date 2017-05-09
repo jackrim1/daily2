@@ -3,4 +3,4 @@
 
 <!-- <%= area_chart Record.pluck(:run, :backpain).count %> -->
 
-<%= line_chart Record.group(:backpain).group_by_day(:created_at).count %>
+<%= line_chart Record.group(:shoulderpain).group_by_day(:created_at).count %>

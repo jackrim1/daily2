@@ -1,0 +1,4 @@
+<h1>Graphs</h1>
+<p>Find me in app/views/graphs/show.html.erb</p>
+
+<%= line_chart Record.group_by_day(:created_at).count %>
